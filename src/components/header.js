@@ -33,32 +33,34 @@ const Header = ({ siteTitle }) => (
       data-sticky
       data-options="marginTop: 0;"
     >
-      <Link to="/" className="hide-for-small-only">
-        <StaticImage
-          src="../images/logo-greens.png"
-          alt={siteTitle}
-          formats={["auto", "webp", "avif"]}
-          placeholder="none"
-          height="75"
-        />
-      </Link>
-      <ul class="menu">
-        <li>
-          <Link to="/" activeClassName="active" partiallyActive={true}>
-            One
-          </Link>
-        </li>
-        <li>
-          <Link to="/" activeClassName="active" partiallyActive={true}>
-            Two
-          </Link>
-        </li>
-        <li>
-          <Link to="/" activeClassName="active" partiallyActive={true}>
-            Three
-          </Link>
-        </li>
-      </ul>
+      <div className="grid-container top-bar">
+        <Link to="/" className="hide-for-small-only">
+          <StaticImage
+            src="../images/logo-greens.png"
+            alt={siteTitle}
+            formats={["auto", "webp", "avif"]}
+            placeholder="none"
+            height="75"
+          />
+        </Link>
+        <ul class="menu">
+          <li>
+            <Link to="/" activeClassName="active" partiallyActive={true}>
+              One
+            </Link>
+          </li>
+          <li>
+            <Link to="/" activeClassName="active" partiallyActive={true}>
+              Two
+            </Link>
+          </li>
+          <li>
+            <Link to="/" activeClassName="active" partiallyActive={true}>
+              Three
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 )

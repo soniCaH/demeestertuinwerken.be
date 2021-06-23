@@ -1,7 +1,15 @@
+.navigation-wrapper {
+  background: var(--color-white);
+}
+
 .title-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.top-bar.grid-container {
+  width: 100%;
 }
 
 .title-bar-title {
