@@ -8,7 +8,6 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-
     <StaticImage
       src="../images/cover.jpg"
       alt="Demeester Tuinaanleg"
@@ -16,9 +15,10 @@ const IndexPage = () => (
       placeholder="blurred"
       aspectRatio="2"
       formats={["auto", "webp", "avif"]}
+      style={{position: 'relative', display: 'block'}}
     />
 
-    <main className="grid-container">
+    <div className="grid-container">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
         temporibus a reprehenderit, adipisci expedita nam odio neque alias
@@ -458,7 +458,7 @@ const IndexPage = () => (
         eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
         modi provident obcaecati impedit dignissimos.
       </p>
-    </main>
+    </div>
   </Layout>
 )
 

@@ -1,3 +1,5 @@
+@import '~foundation-sites/scss/util/util';
+
 .navigation-wrapper {
   background: var(--color-white);
 }
@@ -17,17 +19,57 @@
 }
 
 .menu {
+  font-family: var(--font-title);
+
   a {
-    color: var(--color-green);
+    color: var(--color-black);
+    position: relative;
 
     &:hover {
-      color: var(--color-green-dark);
-      text-decoration: underline;
+      color: var(--color-green);
     }
 
     &.active {
-      color: var(--color-green-dark);
-      text-decoration: underline;
+      color: var(--color-green);
+
+      &::after {
+        content: " ";
+        text-align: center;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: var(--color-green);
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 5px;
+
+        @include breakpoint(medium) {
+          top: calc(50% + 14px);
+          left: calc(50% - 2px);
+        }
+      }
     }
+  }
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
   }
 }

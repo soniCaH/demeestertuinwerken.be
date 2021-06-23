@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header data-sticky-container>
+  <header>
     <div class="title-bar" data-responsive-toggle="navigation">
       <Link to="/">
         <StaticImage
@@ -27,39 +27,41 @@ const Header = ({ siteTitle }) => (
         ></button>
       </div>
     </div>
-    <div
-      class="top-bar"
-      id="navigation"
-      data-sticky
-      data-options="marginTop: 0;"
-    >
-      <div className="grid-container top-bar">
-        <Link to="/" className="hide-for-small-only">
-          <StaticImage
-            src="../images/logo-greens.png"
-            alt={siteTitle}
-            formats={["auto", "webp", "avif"]}
-            placeholder="none"
-            height="75"
-          />
-        </Link>
-        <ul class="menu">
-          <li>
-            <Link to="/" activeClassName="active" partiallyActive={true}>
-              One
-            </Link>
-          </li>
-          <li>
-            <Link to="/" activeClassName="active" partiallyActive={true}>
-              Two
-            </Link>
-          </li>
-          <li>
-            <Link to="/" activeClassName="active" partiallyActive={true}>
-              Three
-            </Link>
-          </li>
-        </ul>
+    <div className="sticky-container" data-sticky-container>
+      <div
+        class="top-bar"
+        id="navigation"
+        data-sticky
+        data-options="marginTop: 0;"
+      >
+        <div className="grid-container top-bar">
+          <Link to="/" className="hide-for-small-only">
+            <StaticImage
+              src="../images/logo-greens.png"
+              alt={siteTitle}
+              formats={["auto", "webp", "avif"]}
+              placeholder="none"
+              height="75"
+            />
+          </Link>
+          <ul class="menu">
+            <li>
+              <Link to="/" activeClassName="active" partiallyActive={true}>
+                One
+              </Link>
+            </li>
+            <li>
+              <Link to="/" activeClassName="active" partiallyActive={true}>
+                Two
+              </Link>
+            </li>
+            <li>
+              <Link to="/" activeClassName="active" partiallyActive={true}>
+                Three
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>

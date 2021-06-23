@@ -31,12 +31,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata?.title || `Demeester Tuinwerken`}
-      />
-      <div>
-        <main>{children}</main>
-      </div>
+      <Header siteTitle={data.site.siteMetadata?.title || `Demeester Tuinwerken`} />
+      <main>{children}</main>
     </>
   )
 }
