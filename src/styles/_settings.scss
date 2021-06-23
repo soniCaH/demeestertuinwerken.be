@@ -71,8 +71,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1280);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #4B9B48,
-  secondary: #767676,
+  primary: #28712a,
+  secondary: #1d4f1e,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -819,12 +819,12 @@ $thumbnail-radius: $global-radius;
 // 53. Title Bar
 // -------------
 
-$titlebar-background: $black;
-$titlebar-color: $white;
+$titlebar-background: var(--color-white);
+$titlebar-color: var(--color-green);
 $titlebar-padding: 1rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-color: var(--color-green);
+$titlebar-icon-color-hover: var(--color-green-dark);
 $titlebar-icon-spacing: 0.25rem;
 
 // 54. Tooltip
@@ -845,8 +845,8 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: var(--color-gray-light);
+$topbar-padding: 0rem;
+$topbar-background: var(--color-white);
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

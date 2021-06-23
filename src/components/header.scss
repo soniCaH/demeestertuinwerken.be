@@ -1,0 +1,25 @@
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-bar-title {
+  margin-right: .5em;
+}
+
+.menu {
+  a {
+    color: var(--color-green);
+
+    &:hover {
+      color: var(--color-green-dark);
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: var(--color-green-dark);
+      text-decoration: underline;
+    }
+  }
+}

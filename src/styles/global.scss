@@ -5,6 +5,29 @@
 @import './settings';
 @import '~foundation-sites/scss/foundation';
 
-@import './layout';
-
 @include foundation-everything;
+
+a {
+  text-decoration-skip-ink: all;
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+}
