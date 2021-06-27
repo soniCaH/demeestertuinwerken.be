@@ -14,6 +14,26 @@
   justify-content: space-between;
 }
 
+.top-bar.sticky {
+  height: calc(100px + 1em);
+  padding: .5em 0;
+
+  &.is-stuck {
+    height: 75px;
+    padding: 0;
+
+    img {
+      height: 75px;
+      width: auto;
+    }
+  }
+
+  img {
+    height: 100px;
+    width: auto;
+  }
+}
+
 .top-bar.grid-container {
   width: 100%;
 }

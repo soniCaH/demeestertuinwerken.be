@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
         class="top-bar"
         id="navigation"
         data-sticky
-        data-options="marginTop: 0; maxHeight: 70px"
+        data-options="marginTop: 0"
       >
         <div className="grid-container top-bar">
           <Link to="/" className="hide-for-small-only">
@@ -41,23 +41,28 @@ const Header = ({ siteTitle }) => (
               alt={siteTitle}
               formats={["auto", "webp", "avif"]}
               placeholder="none"
-              height="100"
+              // height="100"
             />
           </Link>
           <ul class="menu">
             <li>
               <Link to="/" activeClassName="active" partiallyActive={true}>
-                One
+                Start
               </Link>
             </li>
             <li>
-              <Link to="/" activeClassName="active" partiallyActive={true}>
-                Two
+              <Link to="/services" activeClassName="active" partiallyActive={true}>
+                Wat doen we
               </Link>
             </li>
             <li>
-              <Link to="/" activeClassName="active" partiallyActive={true}>
-                Three
+              <Link to="/about" activeClassName="active" partiallyActive={true}>
+                Wie zijn we
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" activeClassName="active" partiallyActive={true}>
+                Contact
               </Link>
             </li>
           </ul>
