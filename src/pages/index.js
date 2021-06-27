@@ -13,7 +13,7 @@ const IndexPage = () => (
       alt="Demeester Tuinaanleg"
       layout="fullWidth"
       placeholder="blurred"
-      aspectRatio="2"
+      aspectRatio="2.5"
       formats={["auto", "webp", "avif"]}
       style={{position: 'relative', display: 'block'}}
     />

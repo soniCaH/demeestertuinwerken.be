@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useEffect } from "react"
+import React, { useEffect, Fragment } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import $ from "jquery"
@@ -29,11 +29,13 @@ const Layout = ({ children }) => {
     $(document).foundation()
   })
 
+  const title = data.site.siteMetadata?.title || `Demeester Tuinwerken`
+
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Demeester Tuinwerken`} />
-      <main>{children}</main>
-    </>
+    <Fragment>
+      <Header siteTitle={title} />
+      <main className="l--content">{children}</main>
+    </Fragment>
   )
 }
 

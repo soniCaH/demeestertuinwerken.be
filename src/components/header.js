@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="l--header">
     <div class="title-bar" data-responsive-toggle="navigation">
       <Link to="/">
         <StaticImage
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
         class="top-bar"
         id="navigation"
         data-sticky
-        data-options="marginTop: 0;"
+        data-options="marginTop: 0; maxHeight: 70px"
       >
         <div className="grid-container top-bar">
           <Link to="/" className="hide-for-small-only">
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
               alt={siteTitle}
               formats={["auto", "webp", "avif"]}
               placeholder="none"
-              height="75"
+              height="100"
             />
           </Link>
           <ul class="menu">
