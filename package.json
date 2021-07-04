@@ -16,7 +16,7 @@
     "gatsby-plugin-sass": "4.8.0",
     "gatsby-plugin-sharp": "3.8.0",
     "gatsby-source-filesystem": "3.8.0",
-    "gatsby-transformer-remark": "^4.5.0",
+    "gatsby-transformer-remark": "4.5.0",
     "gatsby-transformer-sharp": "3.8.0",
     "gbimage-bridge": "0.1.4",
     "jquery": "3.6.0",
