@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "foundation-sites": "6.6.3",
-    "gatsby": "3.8.0",
+    "gatsby": "3.8.1",
     "gatsby-background-image": "1.5.3",
     "gatsby-plugin-gatsby-cloud": "2.8.1",
     "gatsby-plugin-image": "1.8.0",
