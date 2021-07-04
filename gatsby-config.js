@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Demeester Tuinwerken`,
-    description: `Sinds 2015 ben ik zelfstandige tuinaannemer. Je kan bij mij terecht voor tuinaanleg en -onderhoud, plaatsen van tuinwerken, grondwerken enz...`,
+    description: `Sinds 2015 ben ik zelfstandige tuinaannemer. Je kan bij mij terecht voor tuinaanleg en -onderhoud, algemene tuinwerken, opritten, grondwerken enz...`,
     author: `@KevinVRansbeeck`,
   },
   plugins: [

@@ -10,3 +10,25 @@
 a {
   text-decoration-skip-ink: all;
 }
+
+.highlight {
+  text-shadow: 3px 4px 5px #333;
+}
+
+.home__fullwidth_section {
+  background-color: var(--color-green-alpha);
+  border-bottom: 1px solid var(--color-green-alpha-2);
+  margin-bottom: 2em;
+}
+
+.home__picture--left {
+
+}
+
+.home__text--right {
+  padding: 2em;
+
+  @include breakpoint(medium) {
+    padding: 4em;
+  }
+}

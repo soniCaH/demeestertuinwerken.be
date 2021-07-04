@@ -135,7 +135,7 @@ $header-font-family: "Montserrat", Verdana, sans-serif;
 $header-font-weight: 700;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: var(--color-gray-blue);
+$header-color: var(--color-green);
 $header-lineheight: 1.2;
 $header-margin-bottom: 1em;
 $header-styles: (
@@ -158,7 +158,7 @@ $header-styles: (
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 20%;
-$header-small-font-color: var(--color-gray-blue);
+$header-small-font-color: var(--color-green);
 $paragraph-lineheight: 1.75;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
@@ -203,7 +203,7 @@ $abbr-underline: 1px dotted $black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: var(--color-green);
 $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
