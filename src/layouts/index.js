@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React, { useEffect, Fragment } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import $ from "jquery"
 
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,6 +29,7 @@ const Layout = ({ children }) => {
     <Fragment>
       <Header siteTitle={title} />
       <main className="l--content">{children}</main>
+      <Footer />
     </Fragment>
   )
 }

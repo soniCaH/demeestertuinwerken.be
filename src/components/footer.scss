@@ -1,0 +1,15 @@
+.l--footer {
+  color: var(--color-white);
+  border-top: 1px solid var(--color-green-alpha-2);
+  background: var(--color-green);
+  min-height: 150px;
+  padding: 1em 0;
+
+  a {
+    color: var(--color-white);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
