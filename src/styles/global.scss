@@ -22,6 +22,14 @@ a {
   }
 }
 
+h1 {
+  margin: 1em 0;
+
+  .hero_image & {
+    margin: 0;
+  }
+}
+
 .highlight {
   text-shadow: 3px 4px 5px #333;
 }
