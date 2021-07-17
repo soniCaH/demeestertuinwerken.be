@@ -7,20 +7,20 @@ import "./header.scss"
 
 const Header = ({ siteTitle }) => (
   <header className="l--header">
-    <div class="title-bar" data-responsive-toggle="navigation">
+    <div className="title-bar" data-responsive-toggle="navigation">
       <Link to="/">
         <StaticImage
           src="../images/logo-greens.png"
           alt={siteTitle}
           formats={["auto", "webp", "avif"]}
           placeholder="none"
-          height="50"
+          height={50}
         />
       </Link>
       <div className="menu-responsive">
-        <div class="title-bar-title">Menu</div>
+        <div className="title-bar-title">Menu</div>
         <button
-          class="menu-icon"
+          className="menu-icon"
           type="button"
           data-toggle="navigation"
           aria-label="Toggle Responsive navigation"
@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
     </div>
     <div className="sticky-container" data-sticky-container>
       <div
-        class="top-bar"
+        className="top-bar"
         id="navigation"
         data-sticky
         data-options="marginTop: 0"
@@ -44,14 +44,18 @@ const Header = ({ siteTitle }) => (
               // height="100"
             />
           </Link>
-          <ul class="menu">
+          <ul className="menu">
             <li>
               <Link to="/" activeClassName="active">
                 Start
               </Link>
             </li>
             <li>
-              <Link to="/services" activeClassName="active" partiallyActive={true}>
+              <Link
+                to="/services"
+                activeClassName="active"
+                partiallyActive={true}
+              >
                 Wat doen we
               </Link>
             </li>
@@ -61,7 +65,11 @@ const Header = ({ siteTitle }) => (
               </Link>
             </li>
             <li>
-              <Link to="/contact" activeClassName="active" partiallyActive={true}>
+              <Link
+                to="/contact"
+                activeClassName="active"
+                partiallyActive={true}
+              >
                 Contact
               </Link>
             </li>

@@ -11,7 +11,7 @@ const Footer = () => (
           <StaticImage
             src="../images/logo-white.png"
             alt="Demeester Tuinwerken"
-            width="250"
+            width={250}
             placeholder="tracedSVG"
           />
         </div>
@@ -24,7 +24,9 @@ const Footer = () => (
           <br />
           <a href="tel:+32499203592">0499/20.35.92</a>
           <br />
-          <a href="mailto:y.demeester.tuinwerken@gmail.com">y.demeester.tuinwerken@gmail.com</a>
+          <a href="mailto:y.demeester.tuinwerken@gmail.com">
+            y.demeester.tuinwerken@gmail.com
+          </a>
         </div>
       </div>
     </div>

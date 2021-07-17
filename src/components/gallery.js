@@ -40,7 +40,11 @@ const Gallery = ({ category }) => {
       )
     })
 
-  return <section className="gallery grid-x grid-margin-x grid-margin-y">{childImages}</section>
+  return (
+    <section className="gallery grid-x grid-margin-x grid-margin-y">
+      {childImages}
+    </section>
+  )
 }
 
 export default Gallery
