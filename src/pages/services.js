@@ -10,6 +10,28 @@ const ServicesPage = () => (
     <Seo title="Onze services" />
     <div className="grid-container">
       <h1 className="border--after">Onze services</h1>
+    </div>
+    <div className="services__fullwidth_section">
+      <div className="grid-container">
+        <div className="grid-x">
+          <h2>Totaalaanpak of detailwerk</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+            temporibus a reprehenderit, adipisci expedita nam odio neque alias
+            eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
+            modi provident obcaecati impedit dignissimos. Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Rem, temporibus a reprehenderit,
+            adipisci expedita nam odio neque alias eligendi, consectetur sapiente
+            dicta tenetur perspiciatis. Aspernatur modi provident obcaecati impedit
+            dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Rem, temporibus a reprehenderit, adipisci expedita nam odio neque alias
+            eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
+            modi provident obcaecati impedit dignissimos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="grid-container">
       <div className="grid-x grid-margin-x grid-margin-y">
         <Link to="/services/tuinaanleg" className="cell medium-6 grid-image">
           <StaticImage
@@ -64,19 +86,7 @@ const ServicesPage = () => (
           <h3 className="grid-image__title">Tuinpoorten</h3>
         </Link>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-        temporibus a reprehenderit, adipisci expedita nam odio neque alias
-        eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
-        modi provident obcaecati impedit dignissimos. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Rem, temporibus a reprehenderit,
-        adipisci expedita nam odio neque alias eligendi, consectetur sapiente
-        dicta tenetur perspiciatis. Aspernatur modi provident obcaecati impedit
-        dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Rem, temporibus a reprehenderit, adipisci expedita nam odio neque alias
-        eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
-        modi provident obcaecati impedit dignissimos.
-      </p>
+      <p></p>
     </div>
   </Layout>
 )

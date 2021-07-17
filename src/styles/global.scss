@@ -1,6 +1,8 @@
 @import '~modern-css-reset/src/reset';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Source+Sans+Pro:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
 // @import '~foundation-sites/scss/util/util';
 @import './settings';
 @import '~foundation-sites/scss/foundation';
@@ -23,6 +25,7 @@ a {
 }
 
 h1 {
+  font-weight: 700;
   margin: 1em 0;
 
   .hero_image & {
@@ -31,13 +34,21 @@ h1 {
 }
 
 .highlight {
-  text-shadow: 3px 4px 5px #333;
+  text-shadow: 1px 1px 1px #333;
 }
 
 .home__fullwidth_section {
   background-color: var(--color-green-alpha);
   border-bottom: 1px solid var(--color-green-alpha-2);
   margin-bottom: 2em;
+}
+
+.services__fullwidth_section {
+  background-color: var(--color-green-alpha);
+  border-bottom: 1px solid var(--color-green-alpha);
+  border-top: 1px solid var(--color-green-alpha);
+  margin: 2em 0;
+  padding: 2em 0;
 }
 
 .home__picture--left {}
@@ -61,7 +72,7 @@ h1 {
     position: absolute;
     color: var(--color-white);
     text-transform: uppercase;
-    text-shadow: 3px 4px 5px #333;
+    text-shadow: 1px 1px 1px #333;
   }
 }
 

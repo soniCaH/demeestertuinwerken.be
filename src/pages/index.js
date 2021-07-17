@@ -44,7 +44,7 @@ const IndexPage = () => {
         <h1
           style={{
             color: "var(--color-white)",
-            textShadow: "3px 4px 5px #333",
+            textShadow: "1px 1px 1px #333",
           }}
         >
           Tuinwerken Demeester

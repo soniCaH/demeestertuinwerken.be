@@ -16,6 +16,7 @@ const Footer = () => (
           />
         </div>
         <div className="cell medium-6">
+          <h2 className="border--after">Contact</h2>
           Yannis Demeester
           <br />
           Aarschotsebaan 35
