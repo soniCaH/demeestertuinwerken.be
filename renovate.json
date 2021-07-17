@@ -16,9 +16,7 @@
       "automerge": true
     }
   ],
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "timezone": "Europe/Brussels",
   "masterIssue": true
 }
