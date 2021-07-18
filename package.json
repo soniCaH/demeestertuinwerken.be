@@ -21,7 +21,7 @@
     "gatsby-transformer-sharp": "3.9.0",
     "gbimage-bridge": "0.1.4",
     "jquery": "3.6.0",
-    "lmdb-store": "^1.6.3",
+    "lmdb-store": "1.6.3",
     "modern-css-reset": "1.4.0",
     "node-sass": "6.0.1",
     "prop-types": "15.7.2",
