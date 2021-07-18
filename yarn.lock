@@ -5993,10 +5993,10 @@ gatsby-page-utils@^1.9.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-gatsby-cloud@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-2.9.0.tgz#3f4ff12d19f4d70bdee0beb8bcd06b76223f578b"
-  integrity sha512-C8E8TOlSPY8ULivmdLLdOoNdX5TTV3+WJFzK0+jeQeT11KKfnR24rI9oqdSjeLQxbMJsOjKtng176EqD8vEqVQ==
+gatsby-plugin-gatsby-cloud@2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-2.9.1.tgz#d295be499f439b9b7608f06ff451ed654104a73c"
+  integrity sha512-cs3bb5a+7hZYw5Mx0t40tC672IKKwn6/yRJfazRfgJ4IBE/bEpAfj8x4yzC9vKqdLjCkz1TbTwLOhVEqfBxyzA==
   dependencies:
     "@babel/runtime" "^7.14.0"
     date-fns "^2.22.1"
@@ -6035,7 +6035,7 @@ gatsby-plugin-manifest@3.9.0:
     semver "^7.3.5"
     sharp "^0.28.1"
 
-gatsby-plugin-netlify@^3.9.0:
+gatsby-plugin-netlify@3.9.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-3.9.0.tgz#c01f07dcecfe29f4d026e5352a1fbbecf585dd0a"
   integrity sha512-umhw3NciYFgQzlhgUMZqCsKPPx2e3/ck95J3iFk377XcWG6QjWcZi9ikkrhnqBcns9ETBV14zuA2v6/vnNuPLA==
