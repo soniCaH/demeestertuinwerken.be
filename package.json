@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "foundation-sites": "6.7.0",
+    "foundation-sites": "6.7.1",
     "gatsby": "3.13.0",
     "gatsby-background-image": "1.5.3",
     "gatsby-plugin-gatsby-cloud": "2.11.0",
