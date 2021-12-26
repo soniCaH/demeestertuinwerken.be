@@ -7,7 +7,7 @@
   "dependencies": {
     "foundation-sites": "6.7.4",
     "gatsby": "3.14.6",
-    "gatsby-background-image": "1.5.3",
+    "gatsby-background-image": "1.6.0",
     "gatsby-plugin-gatsby-cloud": "3.2.1",
     "gatsby-plugin-image": "1.14.2",
     "gatsby-plugin-manifest": "3.14.0",
