@@ -2965,6 +2965,14 @@ babel-plugin-remove-graphql-queries@^3.14.0:
     "@babel/runtime" "^7.15.4"
     gatsby-core-utils "^2.14.0"
 
+babel-plugin-remove-graphql-queries@^4.4.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.6.0.tgz#cdda606988fd1d0e0fc2377ea8e4103d461b45e2"
+  integrity sha512-QMbjJhHOkVHBfFDfAXQp1MFSzLWOJdPMe7Dk3+AF8L+dlLcf2Z7zbIrlRoRPEROyoW4CCPzLDi0Vam5leR/+gw==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    gatsby-core-utils "^3.6.0"
+
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
@@ -3307,7 +3315,7 @@ cacheable-request@^6.0.0:
     normalize-url "^4.1.0"
     responselike "^1.0.2"
 
-cacheable-request@^7.0.1:
+cacheable-request@^7.0.1, cacheable-request@^7.0.2:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-7.0.2.tgz#ea0d0b889364a25854757301ca12b2da77f91d27"
   integrity sha512-pouW8/FmiPQbuGpkXQ9BAPv/Mo5xDGANgSNXzTzJ8DrKGuXOssM4wIQRjfanNRh3Yu5cfYPvcorqbhg2KIJtew==
@@ -3706,6 +3714,11 @@ common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
+
+common-tags@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.2.tgz#94ebb3c076d26032745fd54face7f688ef5ac9c6"
+  integrity sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -5687,6 +5700,23 @@ gatsby-core-utils@^2.14.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^3.4.0, gatsby-core-utils@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.6.0.tgz#0e2f951e2c53731bdb459eb118eb3815a90a9393"
+  integrity sha512-xmjtOWQfLinNbgBiDRT1KpEfDZm0Z0u6+hsf8EH8Ps5UCIhKinGrdtK+QH+RzPGCV1PUg/E/pnLVqQLCvD+tmA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    file-type "^16.5.3"
+    fs-extra "^10.0.0"
+    got "^11.8.3"
+    lock "^1.1.0"
+    node-object-hash "^2.3.10"
+    proper-lockfile "^4.1.2"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-graphiql-explorer@^1.14.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-1.14.0.tgz#2049d6b2cf1612c80faf3983c72a41cb9d6bb116"
@@ -5739,22 +5769,22 @@ gatsby-plugin-gatsby-cloud@3.2.1:
     lodash "^4.17.21"
     webpack-assets-manifest "^5.0.6"
 
-gatsby-plugin-image@1.14.2:
-  version "1.14.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.14.2.tgz#3955e370d8eb96cd3675001220f315a66ad8ea06"
-  integrity sha512-5kw7sAjqrNfMz7E1oMVfOz4CrG6AtIQNYVl1jTAI9sAuTLz/EJEHOM2z54pFUk/irNkrhXDZyEnDjY2d06U7rQ==
+gatsby-plugin-image@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.4.0.tgz#fd960393043e856eb70d998dc34ad96a738162a8"
+  integrity sha512-PKhbefaamdahm1ysKO1d54vnzmIsjR+/qtyFnZumGu8E7O9lN5is0RlXgpNCvsckL+XzcqyMljytt/bYf8L5WA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/parser" "^7.15.5"
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
     babel-jsx-utils "^1.1.0"
-    babel-plugin-remove-graphql-queries "^3.14.0"
+    babel-plugin-remove-graphql-queries "^4.4.0"
     camelcase "^5.3.1"
     chokidar "^3.5.2"
-    common-tags "^1.8.0"
+    common-tags "^1.8.2"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^2.14.0"
+    gatsby-core-utils "^3.4.0"
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
@@ -6449,6 +6479,23 @@ got@^11.8.2:
     "@types/responselike" "^1.0.0"
     cacheable-lookup "^5.0.3"
     cacheable-request "^7.0.1"
+    decompress-response "^6.0.0"
+    http2-wrapper "^1.0.0-beta.5.2"
+    lowercase-keys "^2.0.0"
+    p-cancelable "^2.0.0"
+    responselike "^2.0.0"
+
+got@^11.8.3:
+  version "11.8.3"
+  resolved "https://registry.yarnpkg.com/got/-/got-11.8.3.tgz#f496c8fdda5d729a90b4905d2b07dbd148170770"
+  integrity sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg==
+  dependencies:
+    "@sindresorhus/is" "^4.0.0"
+    "@szmarczak/http-timer" "^4.0.5"
+    "@types/cacheable-request" "^6.0.1"
+    "@types/responselike" "^1.0.0"
+    cacheable-lookup "^5.0.3"
+    cacheable-request "^7.0.2"
     decompress-response "^6.0.0"
     http2-wrapper "^1.0.0-beta.5.2"
     lowercase-keys "^2.0.0"
@@ -7941,7 +7988,7 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lock@^1.0.0:
+lock@^1.0.0, lock@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/lock/-/lock-1.1.0.tgz#53157499d1653b136ca66451071fca615703fa55"
   integrity sha1-UxV0mdFlOxNspmRRBx/KYVcD+lU=
@@ -8938,7 +8985,7 @@ node-gyp@^7.1.0:
     tar "^6.0.2"
     which "^2.0.2"
 
-node-object-hash@^2.3.9:
+node-object-hash@^2.3.10, node-object-hash@^2.3.9:
   version "2.3.10"
   resolved "https://registry.yarnpkg.com/node-object-hash/-/node-object-hash-2.3.10.tgz#4b0c1a3a8239e955f0db71f8e00b38b5c0b33992"
   integrity sha512-jY5dPJzw6NHd/KPSfPKJ+IHoFS81/tJ43r34ZeNMXGzCOM8jwQDCD12HYayKIB6MuznrnqIYy2e891NA2g0ibA==
