@@ -1,1 +1,1 @@
-[![CI](https://github.com/soniCaH/demeestertuinwerken.be/actions/workflows/main.yml/badge.svg)](https://github.com/soniCaH/demeestertuinwerken.be/actions/workflows/main.yml)
+[![Build production](https://github.com/soniCaH/demeestertuinwerken.be/actions/workflows/netlify-master.yml/badge.svg)](https://github.com/soniCaH/demeestertuinwerken.be/actions/workflows/netlify-master.yml)
