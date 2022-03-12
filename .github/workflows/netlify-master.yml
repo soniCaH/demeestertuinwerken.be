@@ -31,7 +31,6 @@ jobs:
         run: |
           yarn install --production
           yarn run build
-      - uses: nelonoel/branch-name@v1.0.1
       - name: "Deploy to netlify"
         uses: nwtgck/actions-netlify@v1.2.3
         with:
