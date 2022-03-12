@@ -75,8 +75,8 @@ const IndexPage = () => {
         <div className="grid-x grid-margin-x grid-margin-y">
           <Link to="/services/tuinaanleg" className="cell medium-6 grid-image">
             <StaticImage
-              src="../images/home-foto1.jpg"
-              alt="Foto"
+              src="../images/services-tuinaanleg.jpg"
+              alt="Tuinaanleg"
               placeholder="blurred"
             />
             <h3 className="grid-image__title">Tuinaanleg</h3>
@@ -86,46 +86,49 @@ const IndexPage = () => {
             className="cell medium-6 grid-image"
           >
             <StaticImage
-              src="../images/home-foto1.jpg"
-              alt="Foto"
+              src="../images/services-tuinonderhoud.jpg"
+              alt="Tuinonderhoud"
               placeholder="blurred"
             />
             <h3 className="grid-image__title">Tuinonderhoud</h3>
           </Link>
           <Link to="/services/transport" className="cell medium-6 grid-image">
             <StaticImage
-              src="../images/home-foto1.jpg"
-              alt="Foto"
+              src="../images/services-transport.jpg"
+              alt="Transport"
               placeholder="blurred"
             />
             <h3 className="grid-image__title">Transport</h3>
           </Link>
           <Link to="/services/realisaties" className="cell medium-6 grid-image">
             <StaticImage
-              src="../images/home-foto1.jpg"
-              alt="Foto"
+              src="../images/services-realisaties.jpg"
+              alt="Realisaties"
               placeholder="blurred"
             />
             <h3 className="grid-image__title">Realisaties</h3>
           </Link>
           <Link to="/services/sportvelden" className="cell medium-6 grid-image">
             <StaticImage
-              src="../images/home-foto1.jpg"
-              alt="Foto"
+              src="../images/services-sportvelden.jpg"
+              alt="Sportvelden onderhoud"
               placeholder="blurred"
             />
             <h3 className="grid-image__title">Sportvelden</h3>
           </Link>
           <Link to="/services/grondwerken" className="cell medium-6 grid-image">
             <StaticImage
-              src="../images/home-foto1.jpg"
-              alt="Foto"
+              src="../images/services-grondwerken.jpg"
+              alt="Grondwerken"
               placeholder="blurred"
             />
             <h3 className="grid-image__title">Grondwerken</h3>
           </Link>
           <Link to="/services/tuinpoorten" className="cell medium-6 grid-image">
-            <StaticImage src="../images/home-foto1.jpg" alt="Foto" />
+            <StaticImage
+              src="../images/services-tuinpoorten.jpg"
+              alt="Tuinpoorten"
+            />
             <h3 className="grid-image__title">Tuinpoorten</h3>
           </Link>
         </div>
