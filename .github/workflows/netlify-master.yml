@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build production
+name: "Build production"
 
 # Controls when the workflow will run
 on:
@@ -27,7 +27,7 @@ jobs:
           node-version-file: .nvmrc
 
       # Runs a set of commands using the runners shell
-      - name: "Build the website"
+      - name: "Build the website (production build)"
         run: |
           yarn install --production
           yarn run build
