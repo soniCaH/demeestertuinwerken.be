@@ -5086,7 +5086,7 @@ gatsby-page-utils@^2.9.1:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-gatsby-cloud@^4.10.0-next.3:
+gatsby-plugin-gatsby-cloud@4.10.0-next.3:
   version "4.10.0-next.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-4.10.0-next.3.tgz#4ee3543a459476b2c67650cacd17207429750741"
   integrity sha512-gGYZ77YJonx/4Qis37tuo7WV820zrP/lYL9r2rOYGjSo30vp/A2NEPgJYTn49YK71oPOfc1h4u4FowwUhcZShg==
@@ -9515,7 +9515,7 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.49.9:
+sass@1.49.9:
   version "1.49.9"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.49.9.tgz#b15a189ecb0ca9e24634bae5d1ebc191809712f9"
   integrity sha512-YlYWkkHP9fbwaFRZQRXgDi3mXZShslVmmo+FVK3kHLUELHHEYrCmL1x6IUjC7wLS6VuJSAFXRQS/DxdsC4xL1A==
