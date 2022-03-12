@@ -2,6 +2,7 @@ import * as React from "react"
 
 import Layout from "../layouts/index"
 import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => (
   <Layout>
@@ -29,6 +30,11 @@ const AboutPage = () => (
         droom waar te maken.
       </p>
 
+      <StaticImage
+            src="../images/about-camion.jpg"
+            alt="Aankoop eigen camion"
+            placeholder="blurred"
+          />
       <p>
         @TODO: Aanvullen met foto's van camionetten, Tekstje hierboven wat
         verder uitwerken, samenwerkingen wat beschrijven uitklaren "Wie zijn
