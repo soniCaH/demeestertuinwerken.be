@@ -8,7 +8,7 @@ Een tuin vraagt elk jaar een beetje aandacht zodat je in de zomer gezellig in he
 
 Ook een gazon vraagt regelmatig wat aandacht om er mooi groen en onkruidvrij bij te (blijven) liggen: bijzaaien, verluchten, bemesten, onderhouden...
 
-Je kan bij ons terecht om jouw tuin ook na de aanleg ik volle glorie te laten bloeien jaar na jaar
+Je kan bij ons terecht om jouw tuin ook na de aanleg ik volle glorie te laten bloeien jaar na jaar.
 
-- Op jouw vraag en noden maken wij je tuin zomer- en/of winterklaar
-- Wil je graag op regelatige basis een onderhoud laten uitvoeren, dan maken wij graag een onderhoudsplan op op maat van jouw wensen
+- Op jouw vraag en noden maken wij je tuin zomer- en/of winterklaar.
+- Wil je graag op regelmatige basis een onderhoud laten uitvoeren, kunnen we samen een plan opstellen op maat van je wensen.

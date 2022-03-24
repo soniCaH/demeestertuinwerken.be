@@ -61,12 +61,7 @@ const IndexPage = () => {
         </div>
         <div className="cell medium-8 home__text--right">
           <h2>Persoonlijke totaalaanpak</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-            temporibus a reprehenderit, adipisci expedita nam odio neque alias
-            eligendi, consectetur sapiente dicta tenetur perspiciatis.
-            Aspernatur modi provident obcaecati impedit dignissimos.{" "}
-          </p>
+          <p>Uw partner voor al uw tuinwerken!</p>
         </div>
       </div>
 
