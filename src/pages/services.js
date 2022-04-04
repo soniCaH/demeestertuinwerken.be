@@ -15,19 +15,6 @@ const ServicesPage = () => (
       <div className="grid-container">
         <div className="grid-x">
           <h2>Totaalaanpak of detailwerk</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-            temporibus a reprehenderit, adipisci expedita nam odio neque alias
-            eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
-            modi provident obcaecati impedit dignissimos. Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Rem, temporibus a reprehenderit,
-            adipisci expedita nam odio neque alias eligendi, consectetur sapiente
-            dicta tenetur perspiciatis. Aspernatur modi provident obcaecati impedit
-            dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Rem, temporibus a reprehenderit, adipisci expedita nam odio neque alias
-            eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
-            modi provident obcaecati impedit dignissimos.
-          </p>
         </div>
       </div>
     </div>

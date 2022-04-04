@@ -127,19 +127,6 @@ const IndexPage = () => {
             <h3 className="grid-image__title">Tuinpoorten</h3>
           </Link>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-          temporibus a reprehenderit, adipisci expedita nam odio neque alias
-          eligendi, consectetur sapiente dicta tenetur perspiciatis. Aspernatur
-          modi provident obcaecati impedit dignissimos. Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit. Rem, temporibus a reprehenderit,
-          adipisci expedita nam odio neque alias eligendi, consectetur sapiente
-          dicta tenetur perspiciatis. Aspernatur modi provident obcaecati
-          impedit dignissimos. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Rem, temporibus a reprehenderit, adipisci expedita
-          nam odio neque alias eligendi, consectetur sapiente dicta tenetur
-          perspiciatis. Aspernatur modi provident obcaecati impedit dignissimos.
-        </p>
       </div>
     </Layout>
   )

@@ -35,11 +35,6 @@ const AboutPage = () => (
             alt="Aankoop eigen camion"
             placeholder="blurred"
           />
-      <p>
-        @TODO: Aanvullen met foto's van camionetten, Tekstje hierboven wat
-        verder uitwerken, samenwerkingen wat beschrijven uitklaren "Wie zijn
-        wij" vs "Wie ben ik".
-      </p>
     </div>
   </Layout>
 )
