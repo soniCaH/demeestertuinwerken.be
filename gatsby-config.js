@@ -33,6 +33,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: process.env.GATSBY_GTM_ID,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: `gatsby`, branch: process.env.BRANCH },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
