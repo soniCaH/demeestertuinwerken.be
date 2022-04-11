@@ -24,20 +24,81 @@ jobs:
         uses: actions/setup-node@v3.1.1
         with:
           node-version-file: .nvmrc
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
 
-      # Runs a set of commands using the runners shell
+      - uses: chrnorm/deployment-action@releases/v1
+        name: Create GitHub deployment
+        id: deployment
+        with:
+          token: "${{ github.token }}"
+          environment: "${{ github.head_ref }}"
+          ref: ${{ github.event.pull_request.head.sha }}
+          initial_status: pending
+
       - name: "Build the website"
         run: |
           yarn install --production
           yarn run build
-      - name: "Deploy to netlify"
-        uses: nwtgck/actions-netlify@v1.2.3
-        with:
-          publish-dir: './public'
-          production-branch: 'master'
-          deploy-message: '${{ github.event.head_commit.message }}'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-config-path: ./netlify.toml
         env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          CI: true
+      - name: "Deploy to netlify server"
+        uses: netlify/actions/cli@master
+        id: deploy_preview
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=public
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+
+      - name: Find the comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: Netlify Preview Deployment Information
+
+      - name: Create or update comment with preview URL.
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🚀 This pull request is being automatically deployed to Netlify.
+
+            ✅ Preview: ${{ steps.deploy_preview.outputs.NETLIFY_URL }}
+            🔍 Inspect: ${{ steps.deploy_preview.outputs.NETLIFY_LOGS_URL }}
+            📝 Output: ${{  steps.deploy_preview.outputs.NETLIFY_OUTPUT}}
+          edit-mode: replace
+
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@releases/v1
+        with:
+          token: "${{ github.token }}"
+          target_url: ${{ steps.deploy_preview.outputs.NETLIFY_URL }}
+          environment_url: ${{ steps.deploy_preview.outputs.NETLIFY_URL }}
+          log_url: ${{ steps.deploy_preview.outputs.NETLIFY_LOGS_URL }}
+          state: "success"
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@releases/v1
+        with:
+          token: "${{ github.token }}"
+          environment_url: ${{ steps.deploy_preview.outputs.NETLIFY_URL }}
+          log_url: ${{ steps.deploy_preview.outputs.NETLIFY_LOGS_URL }}
+          state: "failure"
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}

@@ -25,20 +25,51 @@ jobs:
         with:
           node-version-file: .nvmrc
 
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+      - uses: chrnorm/deployment-action@releases/v1
+        name: Create GitHub deployment
+        id: deployment
+        with:
+          token: "${{ github.token }}"
+          environment: production
+          initial_status: queued
+
       # Runs a set of commands using the runners shell
       - name: "Build the website (production build)"
         run: |
           yarn install --production
           yarn run build
-      - name: "Deploy to netlify"
-        uses: nwtgck/actions-netlify@v1.2.3
-        with:
-          publish-dir: './public'
-          production-branch: 'master'
-          deploy-message: '${{ github.event.head_commit.message }}'
-          production-deploy: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-config-path: ./netlify.toml
+      - name: "Deploy to netlify server"
+        uses: netlify/actions/cli@master
         env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=public --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+      - name: Update deployment status (success)
+        if: success()
+        uses: chrnorm/deployment-status@releases/v1
+        with:
+          token: "${{ github.token }}"
+          target_url: ${{ steps.deploy_preview.outputs.NETLIFY_URL }}
+          state: "success"
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Update deployment status (failure)
+        if: failure()
+        uses: chrnorm/deployment-status@releases/v1
+        with:
+          token: "${{ github.token }}"
+          environment_url: ${{ steps.deploy_preview.outputs.NETLIFY_LIVE_URL }}
+          state: "failure"
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
