@@ -5595,7 +5595,7 @@ gatsby-parcel-config@^0.2.0:
     "@parcel/transformer-raw" "^2.3.2"
     "@parcel/transformer-react-refresh-wrap" "^2.3.2"
 
-gatsby-plugin-google-tagmanager@^4.11.1:
+gatsby-plugin-google-tagmanager@4.11.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-4.11.1.tgz#123df8eccba59c2150e5f53b2a924ea6c9c8dec7"
   integrity sha512-K96GaNZg5UlHYXBhqSB8flOr99bIb0DyLJ657xCpWYZhWA4x+M+m+d7RcklsGE0RWD27Vyp4wdBR6hSMsW8Vzw==
