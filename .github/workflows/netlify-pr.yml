@@ -38,7 +38,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_GATSBY_GTM_ID: ${{ secrets.GATSBY_GTM_ID }}
-          envkey_BRANCH: ${GITHUB_REF##*/}
+          envkey_BRANCH: ${{ GITHUB_REF##*/ }}
       - uses: chrnorm/deployment-action@releases/v1
         name: Create GitHub deployment
         id: deployment
