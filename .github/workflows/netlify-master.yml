@@ -19,12 +19,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: "Checkout Source Code"
         uses: actions/checkout@v3
-
       - name: "Setup Node.js environment"
         uses: actions/setup-node@v3.1.1
         with:
           node-version-file: .nvmrc
-
       - name: Caching Gatsby
         id: gatsby-cache-build
         uses: actions/cache@v3
@@ -35,11 +33,11 @@ jobs:
           key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
           restore-keys: |
             ${{ runner.os }}-gatsby-build-
-
       - name: Create .env file
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_GATSBY_GTM_ID: ${{ secrets.GATSBY_GTM_ID }}
+          envkey_BRANCH: ${GITHUB_REF##*/}
       - uses: chrnorm/deployment-action@releases/v1
         name: Create GitHub deployment
         id: deployment
