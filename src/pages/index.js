@@ -62,6 +62,15 @@ const IndexPage = () => {
         <div className="cell medium-8 home__text--right">
           <h2>Persoonlijke totaalaanpak</h2>
           <p>Uw partner voor al uw tuinwerken!</p>
+          <p>
+            Neem zeker ook een kijkje op{" "}
+            <a
+              href="https://www.facebook.com/Demeester.tuinwerken/"
+              target="_blank"
+            >
+              onze facebook pagina
+            </a>
+          </p>
         </div>
       </div>
 
