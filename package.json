@@ -22,7 +22,7 @@
     "gatsby-transformer-remark": "5.21.0",
     "gatsby-transformer-sharp": "4.21.0",
     "gbimage-bridge": "0.2.2",
-    "jquery": "3.6.0",
+    "jquery": "3.6.1",
     "lmdb-store": "1.6.14",
     "modern-css-reset": "1.4.0",
     "prop-types": "15.8.1",
