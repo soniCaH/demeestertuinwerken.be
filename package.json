@@ -8,7 +8,7 @@
     "@babel/runtime": "7.19.0",
     "dotenv": "16.0.3",
     "foundation-sites": "6.7.5",
-    "gatsby": "4.24.1",
+    "gatsby": "4.24.3",
     "gatsby-background-image": "1.6.0",
     "gatsby-plugin-google-tagmanager": "4.24.0",
     "gatsby-plugin-image": "2.24.0",
