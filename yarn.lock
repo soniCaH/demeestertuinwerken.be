@@ -3231,15 +3231,10 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001297, caniuse-lite@^1.0.30001313:
-  version "1.0.30001314"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001314.tgz#65c7f9fb7e4594fca0a333bec1d8939662377596"
-  integrity sha512-0zaSO+TnCHtHJIbpLroX7nsD+vYuOVjl3uzFbJO1wMVbuveJA0RK2WcQA9ZUIOiO0/ArMiMgHJLxfEZhQiC0kw==
-
-caniuse-lite@^1.0.30001332:
-  version "1.0.30001339"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001339.tgz#f9aece4ea8156071613b27791547ba0b33f176cf"
-  integrity sha512-Es8PiVqCe+uXdms0Gu5xP5PF2bxLR7OBp3wUzUnuO7OHzhOfCyg3hdiGWVPVxhiuniOzng+hTc1u3fEQ0TlkSQ==
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001297, caniuse-lite@^1.0.30001313, caniuse-lite@^1.0.30001332:
+  version "1.0.30001431"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001431.tgz"
+  integrity sha512-zBUoFU0ZcxpvSt9IU66dXVT/3ctO1cy4y9cscs1szkPlcWb6pasYM144GqrUygUbT+k7cmUCW61cvskjcv0enQ==
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -7094,17 +7089,6 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lmdb-store@1.6.14:
-  version "1.6.14"
-  resolved "https://registry.yarnpkg.com/lmdb-store/-/lmdb-store-1.6.14.tgz#8aa5f36fb04195f8639a3b01b32f6696867f2bc9"
-  integrity sha512-4woZfvfgolMEngjoMJrwePjdLotr3QKGJsDWURlJmKBed5JtE00IfAKo7ryPowl4ksGcs21pcdLkwrPnKomIuA==
-  dependencies:
-    msgpackr "^1.5.0"
-    nan "^2.14.2"
-    node-gyp-build "^4.2.3"
-    ordered-binary "^1.0.0"
-    weak-lru-cache "^1.0.0"
-
 lmdb@2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/lmdb/-/lmdb-2.5.2.tgz#37e28a9fb43405f4dc48c44cec0e13a14c4a6ff1"
@@ -7838,7 +7822,7 @@ msgpackr-extract@^1.0.14:
     nan "^2.14.2"
     node-gyp-build "^4.2.3"
 
-msgpackr@^1.5.0, msgpackr@^1.5.4:
+msgpackr@^1.5.4:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.5.5.tgz#c0562abc2951d7e29f75d77a8656b01f103a042c"
   integrity sha512-JG0V47xRIQ9pyUnx6Hb4+3TrQoia2nA3UIdmyTldhxaxtKFkekkKpUW/N6fwHwod9o4BGuJGtouxOk+yCP5PEA==
@@ -8198,7 +8182,7 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-ordered-binary@^1.0.0, ordered-binary@^1.2.4:
+ordered-binary@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/ordered-binary/-/ordered-binary-1.2.4.tgz#51d3a03af078a0bdba6c7bc8f4fedd1f5d45d83e"
   integrity sha512-A/csN0d3n+igxBPfUrjbV5GC69LWj2pjZzAAeeHXLukQ4+fytfP4T1Lg0ju7MSPSwq7KtHkGaiwO8URZN5IpLg==
@@ -10892,7 +10876,7 @@ watchpack@^2.3.1:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-weak-lru-cache@^1.0.0, weak-lru-cache@^1.2.2:
+weak-lru-cache@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/weak-lru-cache/-/weak-lru-cache-1.2.2.tgz#fdbb6741f36bae9540d12f480ce8254060dccd19"
   integrity sha512-DEAoo25RfSYMuTGc9vPJzZcZullwIqRDSI9LOy+fkCJPi6hykCnfKaXTuPBDuXAUcqHXyOgFtHNp/kB2FjYHbw==
