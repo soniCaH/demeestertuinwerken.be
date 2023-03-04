@@ -13,7 +13,7 @@ const IndexPage = () => {
         heroImage: file(relativePath: { eq: "cover.jpg" }) {
           childImageSharp {
             gatsbyImageData(
-              aspectRatio: 2.5
+              aspectRatio: 1
               layout: FULL_WIDTH
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
@@ -47,7 +47,7 @@ const IndexPage = () => {
             textShadow: "1px 1px 1px #333",
           }}
         >
-          Tuinwerken Demeester
+           Demeester Tuinwerken
         </h1>
         <p className="highlight" style={{ textAlign: "center" }}>
           Professionele tuinaanleg en -onderhoud, algemene tuinwerken, opritten,
