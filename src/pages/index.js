@@ -13,7 +13,7 @@ const IndexPage = () => {
         heroImage: file(relativePath: { eq: "cover.jpg" }) {
           childImageSharp {
             gatsbyImageData(
-              aspectRatio: 2.5
+              aspectRatio: 1
               layout: FULL_WIDTH
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
@@ -47,7 +47,7 @@ const IndexPage = () => {
             textShadow: "1px 1px 1px #333",
           }}
         >
-          Tuinwerken Demeester
+           Demeester Tuinwerken
         </h1>
         <p className="highlight" style={{ textAlign: "center" }}>
           Professionele tuinaanleg en -onderhoud, algemene tuinwerken, opritten,
@@ -56,10 +56,15 @@ const IndexPage = () => {
       </BgImage>
 
       <div className="grid-x home__fullwidth_section">
-        <div className="cell medium-4 home__picture--left">
-          <StaticImage src="../images/home-foto1.jpg" alt="Foto" />
+        <div className="cell grid-x large-8 home__picture--left">
+          <div className="cell small-6">
+            <StaticImage src="../images/home-foto1.jpg" alt="Foto" />
+          </div>
+          <div className="cell small-6">
+            <StaticImage src="../images/home-foto2.jpg" alt="Foto" />
+          </div>
         </div>
-        <div className="cell medium-8 home__text--right">
+        <div className="cell large-4 home__text--right">
           <h2>Persoonlijke totaalaanpak</h2>
           <p>Uw partner voor al uw tuinwerken!</p>
           <p>
