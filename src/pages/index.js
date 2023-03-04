@@ -56,10 +56,15 @@ const IndexPage = () => {
       </BgImage>
 
       <div className="grid-x home__fullwidth_section">
-        <div className="cell medium-4 home__picture--left">
-          <StaticImage src="../images/home-foto1.jpg" alt="Foto" />
+        <div className="cell grid-x large-8 home__picture--left">
+          <div className="cell small-6">
+            <StaticImage src="../images/home-foto1.jpg" alt="Foto" />
+          </div>
+          <div className="cell small-6">
+            <StaticImage src="../images/home-foto2.jpg" alt="Foto" />
+          </div>
         </div>
-        <div className="cell medium-8 home__text--right">
+        <div className="cell large-4 home__text--right">
           <h2>Persoonlijke totaalaanpak</h2>
           <p>Uw partner voor al uw tuinwerken!</p>
           <p>
