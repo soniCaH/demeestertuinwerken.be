@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@babel/runtime": "7.22.5",
-    "dotenv": "16.1.4",
+    "dotenv": "16.2.0",
     "foundation-sites": "6.7.5",
     "gatsby": "5.10.0",
     "gatsby-background-image": "1.6.0",
