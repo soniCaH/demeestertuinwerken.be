@@ -28,7 +28,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-helmet": "6.1.0",
-    "sass": "1.69.1"
+    "sass": "1.69.2"
   },
   "devDependencies": {
     "prettier": "3.0.3"
