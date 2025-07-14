@@ -12,8 +12,8 @@ const ContactPage = () => (
 
       <p>
         Voor informatie, offertes of andere vragen kan je altijd terecht op{" "}
-        <a href="mailto:y.demeester.tuinwerken@gmail.com">
-          y.demeester.tuinwerken@gmail.com
+        <a href="mailto:info@demeestertuinwerken.be">
+          info@demeestertuinwerken.be
         </a>{" "}
         of op onze facebook pagina:{" "}
         <a

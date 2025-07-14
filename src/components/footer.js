@@ -25,8 +25,8 @@ const Footer = () => (
           <br />
           <a href="tel:+32499203592">0499/20.35.92</a>
           <br />
-          <a href="mailto:y.demeester.tuinwerken@gmail.com">
-            y.demeester.tuinwerken@gmail.com
+          <a href="mailto:info@demeestertuinwerken.be">
+            info@demeestertuinwerken.be
           </a>
         </div>
       </div>
