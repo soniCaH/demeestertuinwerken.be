@@ -20,7 +20,7 @@ jobs:
       - name: "Checkout Source Code"
         uses: actions/checkout@v4
       - name: "Setup Node.js environment"
-        uses: actions/setup-node@v4.4.0
+        uses: actions/setup-node@v6.2.0
         with:
           node-version-file: .nvmrc
       - name: Caching Gatsby
