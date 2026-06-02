@@ -18,7 +18,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: "Checkout Source Code"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.3.1
 
       - name: "Setup Node.js environment"
         uses: actions/setup-node@v4.4.0
@@ -26,7 +26,7 @@ jobs:
           node-version-file: .nvmrc
       - name: Caching Gatsby
         id: gatsby-cache-build
-        uses: actions/cache@v3
+        uses: actions/cache@v3.5.0
         with:
           path: |
             public
@@ -35,7 +35,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gatsby-build-
       - name: Create .env file
-        uses: SpicyPizza/create-envfile@v2
+        uses: SpicyPizza/create-envfile@v2.0.3
         with:
           envkey_GATSBY_GTM_ID: ${{ secrets.GATSBY_GTM_ID }}
           envkey_BRANCH: ${{ github.base_ref }}
@@ -66,7 +66,7 @@ jobs:
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
 
       - name: Find the comment
-        uses: peter-evans/find-comment@v3
+        uses: peter-evans/find-comment@v3.1.0
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
@@ -74,7 +74,7 @@ jobs:
           body-includes: Netlify Preview Deployment Information
 
       - name: Create or update comment with preview URL.
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v2.1.1
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
