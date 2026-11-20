@@ -1481,10 +1481,10 @@
     "@babel/helper-validator-option" "^7.18.6"
     "@babel/plugin-transform-typescript" "^7.18.6"
 
-"@babel/runtime@7.29.14":
-  version "7.29.14"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.29.14.tgz#9ad0cc2addbbc8c46adaec9e90b21bb76d42b483"
-  integrity sha512-Y5tqevQaUAZhhj82BpYMNC1ssvLQTVAfwKdm8iy8qwmhvC2/CpcAu8OC+QEtjM7pMk7knx83u1Qj8gzkicyelw==
+"@babel/runtime@8.1.3":
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-8.1.3.tgz#18d4e331a44653ffe0f07c36349f02ac720208dd"
+  integrity sha512-tno/enifiFAE77kbJadRE5wKfmzxlYvdB5Dj8yqmWoT49mDJE+wvLgvJY/EKt/jQllv369GMxyyJ9tKfTL33Nw==
 
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5":
   version "7.17.9"
